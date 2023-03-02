@@ -1,0 +1,33 @@
+@import "reset";
+
+$header-default-height: 72px;
+$main-dark-color: #002f34;
+@import "header";
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.link{
+     &--light{
+      border-radius: 5px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: $main-dark-color;
+      padding: 1rem 2rem;
+      background-color: #fff;
+}
+
+     &--dark{
+      border-radius: 5px;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      background-color: $main-dark-color;
+     }
+}
+.active-lang{
+     color: #23e5db;
+}

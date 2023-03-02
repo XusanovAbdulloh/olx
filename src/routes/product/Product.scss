@@ -1,0 +1,29 @@
+
+.single-product__wrapper{
+    display: flex;
+    padding: 60px 0;
+    gap: 0 30px;
+    font-family: sans-serif;
+    h1{
+        font-size: 46px;
+    }
+    p{
+        margin: 30px 0;
+        color: gray;
+        font-size: 20px;
+    }
+    strong{
+        display: block;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}
+.product-img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.link{
+    font-size: 20px;
+    text-decoration: none;
+}

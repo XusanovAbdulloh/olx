@@ -1,0 +1,38 @@
+header{
+    min-height: $header-default-height;
+    background-color: $main-dark-color;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.header__logo{
+    height: 60px;
+    vertical-align: middle;
+}
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-select{
+    display: flex;
+    list-style: none;
+    gap: 0 10px;
+    li{
+        cursor: pointer;
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+.header__nav-link{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    gap: 0px 10px;
+}

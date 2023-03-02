@@ -1,0 +1,122 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(221, 100%, 61%);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.auth-popup{
+    width: 100%;
+    max-width: 450px;
+    min-height: 650px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.animation-circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0);
+    border: 10px solid #fff;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: scaleout 1s ease-in forwards;
+    animation: scaleout 1s ease-in forwards;
+    opacity: 0;
+}
+@keyframes scaleout{
+    80%{
+        opacity: 0.7;
+        -o-transform: scale(14);
+        -webkit-transform: scale(14);
+        -moz-transform: scale(14);
+        -ms-transform: scale(14);
+        transform: scale(14);
+}
+    100%{
+        opacity: 0.7;
+        -o-transform: scale(12);
+        -webkit-transform: scale(12);
+        -moz-transform: scale(12);
+        -ms-transform: scale(12);
+        transform: scale(12);
+}
+}
+.auth-popup_nav{
+    display: flex;
+    justify-content: space-between;
+     li{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        border-bottom: 1px solid #474747;
+        &:has(.auth__link--active){
+            border-bottom: 2px solid #002f34;
+        }
+        .auth__link{
+            text-decoration: none;
+            color: #474747;
+            &--active{
+                color: #002f34;
+                font-weight: 600;
+            }
+        }
+     }
+}
+.auth-create{
+    padding: 1rem;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px 0;
+    border: 1px solid #f2f4f5;
+    padding-top: 30px;
+    input{
+        height: 40px;
+        text-indent: 10px;
+        background-color: #eaf4f4;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+        border-bottom: 2px solid transparent;
+        &:focus{
+            border-bottom: 2px solid #002f34;
+        }
+}
+
+  button{
+     height: 50px;
+     border: none;
+     background-color: #002f34;
+     color: #fff;
+  }
+}
+
+.auth-google-btn{
+    background-color: #fff;
+    border: 2px solid #002f34;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    gap: 0 20px;
+    margin-bottom: 20px 0;
+    border-radius: 5px;
+    svg{
+        font-size: 24px;
+    }
+}
